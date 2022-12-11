@@ -21,8 +21,6 @@ video_capture = cv2.VideoCapture(1)
 while True:
 
     ret, fr = video_capture.read()
-
-
     gray = cv2.cvtColor(fr, cv2.COLOR_BGR2GRAY)
 
     gray = adjust_dark_spots(gray)
